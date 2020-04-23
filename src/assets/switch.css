@@ -1,0 +1,83 @@
+/* HOVER OFF */
+.switch {
+  width: 90px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 60px;
+
+  background-color: orange;
+  transition: background-color 0.2s 0.2s ease-out;
+  cursor: pointer;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  animation: circleBackward 0.3s ease forwards;
+}
+
+.fa-moon {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  transform: scale(0);
+  font-size: 4rem;
+  color: white;
+  transition: transform 0.4s ease;
+}
+
+.fa-sun {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  transform: scale(0.5);
+  font-size: 4rem;
+  color: white;
+  transition: transform 0.5s ease;
+}
+
+/* ON CLICK */
+.dark .switch {
+  background-color: rgb(54, 37, 116);
+  transition: background-color 0.2s ease-out;
+}
+
+.dark .switch .circle {
+  animation: circleForward 0.3s ease forwards;
+}
+
+.dark .switch .fa-moon {
+  transform: scale(0.5);
+  transition: transform 0.4 ease;
+}
+
+.dark .switch .fa-sun {
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+@keyframes circleForward {
+  0% {
+    transform: scaleY(1) translateX(0px);
+  }
+  50% {
+    transform: scaleY(0.8) translateX(40px);
+  }
+  100% {
+    transform: scaleY(1) translateX(40px);
+  }
+}
+
+@keyframes circleBackward {
+  100% {
+    transform: scaleY(1) translateX(0px);
+  }
+  50% {
+    transform: scaleY(0.8) translateX(40px);
+  }
+  0% {
+    transform: scaleY(1) translateX(40px);
+  }
+}

@@ -42,7 +42,6 @@ function Navigation({ darkMode, switchDark }) {
           + ADD NEW STUDENT
         </NavLink>
       </li>
-      <button onClick={switchDark}>darkmode</button>
     </ul>
   );
 
@@ -76,15 +75,18 @@ function Navigation({ darkMode, switchDark }) {
           + ADD NEW STUDENT
         </NavLink>
       </li>
-      <button onClick={switchDark}>darkmode</button>
     </ul>
   );
 
   return (
     <div className="navWrapper">
       <h1 className="nav-title">STUDENT DASHBOARD</h1>
-      {darkMode ? dark : light}
-
+      <div>{darkMode ? dark : light}</div>
+      <div onClick={switchDark} class="switch">
+        <div class="circle"></div>
+        <i class="far fa-moon"></i>
+        <i class="far fa-sun"></i>
+      </div>
       <img className="logo" src={Logo} alt="problem?" />
     </div>
   );

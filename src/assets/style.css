@@ -73,13 +73,16 @@ div {
   left: 0;
   height: 100vh;
   width: 250px;
-  padding: 10px 0px 20px 20px;
+  padding: 10px 10px 20px 10px;
   background-color: rgb(72, 104, 146);
   color: white;
   border-radius: 0px 30px 30px 0px;
   -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
   -moz-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
   box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dark .navWrapper {
@@ -88,6 +91,11 @@ div {
   -webkit-box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
   -moz-box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
   box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
+}
+
+.navWrapper h1 {
+  text-align: center;
+  margin-left: -12px;
 }
 
 .nav-title {
@@ -120,6 +128,12 @@ div {
   -webkit-box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
   -moz-box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
   box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
+}
+
+.switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 
 .logo {
