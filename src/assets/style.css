@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: rgb(240, 151, 141);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  background-color: #fc0388;
+}
+
+select {
+  width: 262px;
+  height: 32px;
+  padding: 4px;
+  line-height: 32px;
+  text-indent: 4px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+p {
+  background-color: rgb(194, 201, 232);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(18, 45, 80);
+}
+
+div {
+  color: rgb(18, 45, 80);
+}
+
+/* NAV */
+.navWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  padding: 10px 0px 10px 10px;
+  background-color: rgb(18, 45, 80);
+  color: white;
+  border-radius: 0px 30px 30px 0px;
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+}
+
+.nav-title {
+  padding: 20px 0px;
+}
+
+.nav-item {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(67, 43, 226, 0.205);
+  width: 95%;
+  padding: 20px 20px;
+  color: rgb(71, 80, 176);
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  width: 60%;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(231, 237, 249);
+}
+
+.dashboardWrapper,
+.studentsWrapper,
+.newstudentWrapper {
+  padding-left: 270px;
+  padding-right: 20px;
+  width: inherit;
+  min-height: inherit;
+}
+
+.dashboard-titel {
+  padding: 20px 0px;
+}
+
+.graphGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.graphBox {
+  width: 49%;
+  height: fit-content;
+  min-height: 20vw;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  resize: both;
+  overflow: auto;
+}
+
+.graphBox.overview {
+  width: 95%;
+}
+
+.finalBox {
+  grid-column: span 2;
+}
+
+.imgBox {
+  height: auto;
+}
+
+/* DASHBOARD */
+
+/* SELECT STUDENT */
+.select-panel {
+  display: flex;
+}
+#selectStudent {
+  padding: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* STUDENTS */
+
+/* NEW STUDENT */
+.newstudentWrapper {
+  padding-top: 20px;
+}
+
+.newstudent-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  width: 550px;
+  margin: 50px 0px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  color: rgb(130, 158, 199);
+  font-size: 1.5rem;
+}
+
+.newstudent-form input {
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.addStudent-button {
+  padding: 10px 20px;
+  margin: 5px 0px;
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.addStudent-button:hover {
+  background-color: #fc0388;
+}
+
+.avatar-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.avatarBox {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.avatarBox img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* FILTER PANEL */
+.select-panel {
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.selectBox {
+  flex: 1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 10px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+  box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
+}
+
+.selectBox p {
+  margin: 0 0 10px 0;
+}
+
+/* SELECT STUDENTS */
+.selectStudent-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px 0 0 0;
+}
+
+.selectStudent-item {
+  margin: 3px 10px 0 0;
+  width: 100px;
+}
+
+.selectStudent-item input {
+  margin-right: 5px;
+}
+
+.profileBox {
+  display: flex;
+  flex: 2;
+  background-color: rgb(127, 146, 194);
+}
+
+.profileBox p {
+  background-color: rgb(215, 223, 245);
+}
+
+.profile {
+  display: flex;
+}
+
+.profile span {
+  flex: 1;
+}
+
+.imgBox {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.profile {
+  flex: 2;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.profile-item {
+  margin: 5px;
+}
+
+/* SELECT SCORES */
+.selectScore-filter input {
+  margin: 0 10px 0 0;
+}
+
+/* SELECT WEEK */
+
+.dashboardWrapper .selectBox {
+  max-width: 30%;
+}

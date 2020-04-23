@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Evelyn",
+    "last_name": "Lockey",
+    "email": "nlockey0@tripadvisor.com",
+    "gender": "Female",
+    "avatar": "https://i.pinimg.com/564x/91/fc/58/91fc58add6272e37ec3edd3cce302bf3.jpg"
+  },
+  {
+    "id": 2,
+    "first_name": "Aranka",
+    "last_name": "Fishby",
+    "email": "sfishby1@ocn.ne.jp",
+    "gender": "Female",
+    "avatar": "https://i.pinimg.com/474x/dc/c2/69/dcc2690e4d64f7c24cdb751be477dc10.jpg"
+  },
+  {
+    "id": 3,
+    "first_name": "Floris",
+    "last_name": "Jannex",
+    "email": "djannex2@ucsd.edu",
+    "gender": "Male",
+    "avatar": "https://randomuser.me/api/portraits/lego/1.jpg"
+  },
+  {
+    "id": 4,
+    "first_name": "Hector",
+    "last_name": "Lauritzen",
+    "email": "glauritzen3@youku.com",
+    "gender": "Male",
+    "avatar": "https://randomuser.me/api/portraits/lego/5.jpg"
+  },
+  {
+    "id": 5,
+    "first_name": "Martina",
+    "last_name": "Flintoft",
+    "email": "pflintoft4@sitemeter.com",
+    "gender": "Female",
+    "avatar": "https://www.lego.com/r/www/r/catalogs/-/media/catalogs/characters/minifigures/series%2010/71001_portrait_spoiledteen.png?l.r=1102525863"
+  },
+  {
+    "id": 6,
+    "first_name": "Maurits",
+    "last_name": "Withams",
+    "email": "jwithams5@booking.com",
+    "gender": "Male",
+    "avatar": "https://randomuser.me/api/portraits/lego/4.jpg"
+  },
+  {
+    "id": 7,
+    "first_name": "Rahima",
+    "last_name": "Redford",
+    "email": "dredford6@slideshare.net",
+    "gender": "Female",
+    "avatar": "https://www.lego.com/r/www/r/catalogs/-/media/catalogs/characters/minifigures/series%202/8684_portrait_pop-star.png"
+  },
+  {
+    "id": 8,
+    "first_name": "Sandra",
+    "last_name": "Botright",
+    "email": "sbotright7@e-recht24.de",
+    "gender": "Female",
+    "avatar": "https://img.brickowl.com/files/image_cache/larger/lego-girl-with-pink-halter-top-with-butterflies-minifigure-25.jpg"
+  },
+  {
+    "id": 9,
+    "first_name": "Wietske",
+    "last_name": "Hearnden",
+    "email": "ahearnden8@nbcnews.com",
+    "gender": "Female",
+    "avatar": "https://www.brickpicker.com/uploads/monthly_2016_01/female_lego.thumb.jpg.1f96fa7adb237554d7477f2d53ea621e.jpg"
+  },
+  {
+    "id": 10,
+    "first_name": "Storm",
+    "last_name": "Attard",
+    "email": "pattard9@blogspot.com",
+    "gender": "Male",
+    "avatar": "https://randomuser.me/api/portraits/lego/3.jpg"
+  }
+]
