@@ -2,10 +2,16 @@ import React from "react";
 import Navigation from "../../Navigation";
 import DashboardSmart from "./components/dashboard-smart";
 
-function Home({ scoreList, studentNames, assignmentList }) {
+function Home({
+  scoreList,
+  studentNames,
+  assignmentList,
+  darkMode,
+  switchDark,
+}) {
   return (
     <div>
-      <Navigation />
+      <Navigation darkMode={darkMode} switchDark={switchDark} />
       <main>
         <DashboardSmart
           scoreList={scoreList}

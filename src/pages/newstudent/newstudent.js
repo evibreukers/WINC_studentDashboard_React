@@ -2,10 +2,16 @@ import React from "react";
 import Navigation from "../../Navigation";
 import NewStudentSmart from "./components/newstudent-smart";
 
-function NewStudent({ addStudent, onBlur, selectAvatar }) {
+function NewStudent({
+  addStudent,
+  onBlur,
+  selectAvatar,
+  darkMode,
+  switchDark,
+}) {
   return (
     <div>
-      <Navigation />
+      <Navigation darkMode={darkMode} switchDark={switchDark} />
       <main>
         <NewStudentSmart
           addStudent={addStudent}

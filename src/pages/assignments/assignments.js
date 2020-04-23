@@ -8,10 +8,12 @@ function Assignments({
   studentNames,
   assignmentList,
   sortByWeek,
+  darkMode,
+  switchDark,
 }) {
   return (
     <div>
-      <Navigation />
+      <Navigation darkMode={darkMode} switchDark={switchDark} />
       <main>
         <AssignmentsSmart
           scoreList={scoreList}

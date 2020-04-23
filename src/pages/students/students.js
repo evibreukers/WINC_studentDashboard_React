@@ -7,10 +7,12 @@ function Students({
   studentProfileList,
   currentStudent,
   changeStudent,
+  darkMode,
+  switchDark,
 }) {
   return (
     <div>
-      <Navigation />
+      <Navigation darkMode={darkMode} switchDark={switchDark} />
       <main>
         <StudentsSmart
           scoreList={scoreList}

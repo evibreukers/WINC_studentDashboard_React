@@ -126,7 +126,7 @@ const wincTheme = {
         fontSize: 12,
         letterSpacing: "normal",
         padding: 8,
-        fill: "#455A64",
+        fill: "rgb(132, 161, 198)",
         stroke: "transparent",
         strokeWidth: 0,
       },

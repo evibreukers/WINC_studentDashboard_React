@@ -28,6 +28,7 @@ class Main extends React.Component {
         avatar: "https://randomuser.me/api/portraits/lego/5.jpg",
       },
       newStudentScore: newStudentData,
+      darkMode: false,
     };
   }
 
@@ -109,9 +110,14 @@ class Main extends React.Component {
     });
   };
 
+  switchDark = () => {
+    document.querySelector("#App").classList.toggle("dark");
+    this.setState({ darkMode: !this.state.darkMode });
+  };
+
   render = () => {
     return (
-      <div className="App">
+      <div id="App">
         <Root
           scoreList={this.state.scoreList}
           studentProfileList={this.state.studentProfileList}
@@ -120,6 +126,8 @@ class Main extends React.Component {
           changeStudent={this.changeStudent}
           onBlur={this.onBlur}
           selectAvatar={this.selectAvatar}
+          darkMode={this.state.darkMode}
+          switchDark={this.switchDark}
         />
       </div>
     );

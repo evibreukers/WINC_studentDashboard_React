@@ -14,6 +14,8 @@ function Root({
   changeStudent,
   onBlur,
   selectAvatar,
+  darkMode,
+  switchDark,
 }) {
   /* sort assignments per week */
   const sortByWeek = {
@@ -94,6 +96,8 @@ function Root({
             studentNames={studentNames}
             assignmentList={assignmentList}
             sortByWeek={sortByWeek}
+            darkMode={darkMode}
+            switchDark={switchDark}
           />
         </Route>
         <Route path="/students">
@@ -102,6 +106,8 @@ function Root({
             studentProfileList={studentProfileList}
             currentStudent={currentStudent}
             changeStudent={changeStudent}
+            darkMode={darkMode}
+            switchDark={switchDark}
           />
         </Route>
         <Route path="/newstudent">
@@ -109,6 +115,8 @@ function Root({
             addStudent={addStudent}
             onBlur={onBlur}
             selectAvatar={selectAvatar}
+            darkMode={darkMode}
+            switchDark={switchDark}
           />
         </Route>
         <Route path="/home">
@@ -116,6 +124,8 @@ function Root({
             scoreList={scoreList}
             studentNames={studentNames}
             assignmentList={assignmentList}
+            darkMode={darkMode}
+            switchDark={switchDark}
           />
         </Route>
         <Route exact path="/">
@@ -123,6 +133,8 @@ function Root({
             scoreList={scoreList}
             studentNames={studentNames}
             assignmentList={assignmentList}
+            darkMode={darkMode}
+            switchDark={switchDark}
           />
         </Route>
       </Switch>

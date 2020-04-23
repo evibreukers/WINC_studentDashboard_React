@@ -53,7 +53,7 @@ export const makeGraph = (
               fontSize: labelSize,
               letterSpacing: "normal",
               padding: 12,
-              fill: "#455A64",
+              fill: "rgb(132, 161, 198)",
               stroke: "transparent",
               strokeWidth: 0,
               textAnchor: textAlign,
@@ -64,7 +64,16 @@ export const makeGraph = (
       <VictoryAxis
         dependentAxis
         tickFormat={[1, 2, 3, 4, 5]}
-        style={{ tickLabels: { fontSize: 2 } }}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontSize: 10,
+              fontFamily: "'Dosis','sans-serif'",
+              fill: "rgb(132, 161, 198)",
+            }}
+          />
+        }
       />
     </VictoryGroup>
   );
@@ -84,11 +93,11 @@ export const makeGraph = (
           <VictoryLabel
             angle={angle}
             style={{
-              fontFamily: "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              fontFamily: "'Dosis','sans-serif'",
               fontSize: labelSize,
               letterSpacing: "normal",
               padding: 12,
-              fill: "#455A64",
+              fill: "rgb(132, 161, 198)",
               stroke: "transparent",
               strokeWidth: 0,
               textAnchor: textAlign,
@@ -96,7 +105,25 @@ export const makeGraph = (
           />
         }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: labelSize,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: textAlign,
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -115,11 +142,11 @@ export const makeGraph = (
           <VictoryLabel
             angle={angle}
             style={{
-              fontFamily: "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              fontFamily: "'Dosis','sans-serif'",
               fontSize: labelSize,
               letterSpacing: "normal",
               padding: 12,
-              fill: "#455A64",
+              fill: "rgb(132, 161, 198)",
               stroke: "transparent",
               strokeWidth: 0,
               textAnchor: textAlign,
@@ -127,7 +154,25 @@ export const makeGraph = (
           />
         }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: labelSize,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: textAlign,
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -152,11 +197,11 @@ export const makeGraph = (
           <VictoryLabel
             angle={angle}
             style={{
-              fontFamily: "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              fontFamily: "'Dosis','sans-serif'",
               fontSize: labelSize,
               letterSpacing: "normal",
               padding: 12,
-              fill: "#455A64",
+              fill: "rgb(132, 161, 198)",
               stroke: "transparent",
               strokeWidth: 0,
               textAnchor: textAlign,
@@ -164,7 +209,25 @@ export const makeGraph = (
           />
         }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: labelSize,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: textAlign,
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -184,11 +247,11 @@ export const makeGraph = (
           <VictoryLabel
             angle={angle}
             style={{
-              fontFamily: "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              fontFamily: "'Dosis','sans-serif'",
               fontSize: labelSize,
               letterSpacing: "normal",
               padding: 12,
-              fill: "#455A64",
+              fill: "rgb(132, 161, 198)",
               stroke: "transparent",
               strokeWidth: 0,
               textAnchor: textAlign,
@@ -196,7 +259,25 @@ export const makeGraph = (
           />
         }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: labelSize,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: textAlign,
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -216,11 +297,11 @@ export const makeGraph = (
           <VictoryLabel
             angle={angle}
             style={{
-              fontFamily: "'Roboto', 'Helvetica Neue', Helvetica, sans-serif",
+              fontFamily: "'Dosis','sans-serif'",
               fontSize: labelSize,
               letterSpacing: "normal",
               padding: 12,
-              fill: "#455A64",
+              fill: "rgb(132, 161, 198)",
               stroke: "transparent",
               strokeWidth: 0,
               textAnchor: textAlign,
@@ -228,7 +309,25 @@ export const makeGraph = (
           />
         }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: labelSize,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: textAlign,
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -238,16 +337,16 @@ export const makeGraph = (
     showThisGraph = line;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
-      { name: "average fun rate", symbol: { fill: "f9b67d" } },
+      { name: "Average fun rate", symbol: { fill: "f9b67d" } },
     ];
   } else if (graphtype === false && value === "fun") {
     showThisGraph = lineFun;
     showLegend = [
       {
-        name: "average fun rate",
+        name: "Average fun rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -255,7 +354,7 @@ export const makeGraph = (
     showThisGraph = lineDiff;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -263,16 +362,16 @@ export const makeGraph = (
     showThisGraph = bar;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
-      { name: "average fun rate", symbol: { fill: "f9b67d" } },
+      { name: "Average fun rate", symbol: { fill: "f9b67d" } },
     ];
   } else if (graphtype === true && value === "fun") {
     showThisGraph = barFun;
     showLegend = [
       {
-        name: "average fun rate",
+        name: "Average fun rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -280,7 +379,7 @@ export const makeGraph = (
     showThisGraph = barDiff;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -336,9 +435,41 @@ export const makeGraphAssign = (
       <VictoryAxis
         tickValues={arrayLength}
         tickFormat={selectStudents}
-        tickLabelComponent={<VictoryLabel angle={angle} />}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -353,9 +484,41 @@ export const makeGraphAssign = (
       <VictoryAxis
         tickValues={arrayLength}
         tickFormat={selectStudents}
-        tickLabelComponent={<VictoryLabel angle={angle} />}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -370,9 +533,41 @@ export const makeGraphAssign = (
       <VictoryAxis
         tickValues={arrayLength}
         tickFormat={selectStudents}
-        tickLabelComponent={<VictoryLabel angle={angle} />}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -393,9 +588,41 @@ export const makeGraphAssign = (
       <VictoryAxis
         tickValues={arrayLength}
         tickFormat={selectStudents}
-        tickLabelComponent={<VictoryLabel angle={angle} />}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -410,9 +637,41 @@ export const makeGraphAssign = (
       <VictoryAxis
         tickValues={arrayLength}
         tickFormat={selectStudents}
-        tickLabelComponent={<VictoryLabel angle={angle} />}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -427,9 +686,41 @@ export const makeGraphAssign = (
       <VictoryAxis
         tickValues={arrayLength}
         tickFormat={selectStudents}
-        tickLabelComponent={<VictoryLabel angle={angle} />}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
       />
-      <VictoryAxis dependentAxis tickFormat={[1, 2, 3, 4, 5]} />
+      <VictoryAxis
+        dependentAxis
+        tickFormat={[1, 2, 3, 4, 5]}
+        tickLabelComponent={
+          <VictoryLabel
+            angle={angle}
+            style={{
+              fontFamily: "'Dosis','sans-serif'",
+              fontSize: 14,
+              letterSpacing: "normal",
+              padding: 12,
+              fill: "rgb(132, 161, 198)",
+              stroke: "transparent",
+              strokeWidth: 0,
+              textAnchor: "middle",
+            }}
+          />
+        }
+      />
     </VictoryGroup>
   );
 
@@ -439,16 +730,16 @@ export const makeGraphAssign = (
     showThisGraph = line;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
-      { name: "average fun rate", symbol: { fill: "f9b67d" } },
+      { name: "Average fun rate", symbol: { fill: "f9b67d" } },
     ];
   } else if (graphtype === false && value === "fun") {
     showThisGraph = lineFun;
     showLegend = [
       {
-        name: "average fun rate",
+        name: "Average fun rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -456,7 +747,7 @@ export const makeGraphAssign = (
     showThisGraph = lineDiff;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -464,16 +755,16 @@ export const makeGraphAssign = (
     showThisGraph = bar;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
-      { name: "average fun rate", symbol: { fill: "f9b67d" } },
+      { name: "Average fun rate", symbol: { fill: "f9b67d" } },
     ];
   } else if (graphtype === true && value === "fun") {
     showThisGraph = barFun;
     showLegend = [
       {
-        name: "average fun rate",
+        name: "Average fun rate",
         symbol: { fill: "f74ca9" },
       },
     ];
@@ -481,7 +772,7 @@ export const makeGraphAssign = (
     showThisGraph = barDiff;
     showLegend = [
       {
-        name: "average difficulty rate",
+        name: "Average difficulty rate",
         symbol: { fill: "f74ca9" },
       },
     ];
