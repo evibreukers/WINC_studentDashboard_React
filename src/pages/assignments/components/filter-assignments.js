@@ -6,6 +6,7 @@ function FilterAssignments({
   selectStudent,
   selectAll,
   selectScore,
+  handleSort,
 }) {
   return (
     <div className="select-panel">
@@ -53,7 +54,7 @@ function FilterAssignments({
             value="both"
             onClick={selectScore}
           />
-          <label htmlFor="selectFun">all scores</label>
+          <label htmlFor="selectFun">All scores</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -62,7 +63,7 @@ function FilterAssignments({
             value="diff"
             onClick={selectScore}
           />
-          <label htmlFor="selectDiff">difficulty scores</label>
+          <label htmlFor="selectDiff">Difficulty scores only</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -71,7 +72,18 @@ function FilterAssignments({
             value="fun"
             onClick={selectScore}
           />
-          <label htmlFor="selectFun">fun scores</label>
+          <label htmlFor="selectFun">Fun scores only</label>
+        </div>
+
+        <p>SORT BY</p>
+        <div className="sortBy-filter">
+          <select id="selectStudent" onChange={handleSort}>
+            <option value="default">Default</option>
+            <option value="funas">Fun ↑</option>
+            <option value="funde">Fun ↓</option>
+            <option value="diffas">Difficulty ↑</option>
+            <option value="diffde">Difficulty ↓</option>
+          </select>
         </div>
       </div>
     </div>

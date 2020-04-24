@@ -1,30 +1,47 @@
 # playList React
 
-Winc Academy's 5th project of the Front-end Development traineeship.
+Winc Academy's 6th and final project of the Front-end Development traineeship.
 
 ## 💬 Files
 
 ## 💬 Project Goal
 
-Building a Single Page Application (SPA) in which you can save and rate all your favorite songs.
+Building a multiple page dashboard application for Winc Academy. This app will be used to organize the scores students assigned to each assignment during the Winc Academy training.
+
+- Dashboard: display average scores for each assignment (average of scores given by all the students)
+- Assignments: display scores sorted per assignment.
+- Students: display scores sorter per student.
+- Add student: add a new student + add all his/her given scores to the database
+  - after adding a new student, this student will be visible in the student dashboard
+  - after adding a new student, scores of this student will be used in the average score calculations
 
 ## 💬 Tools
 
-HTML, CSS, JavaScript, React, FireBase
+HTML, CSS, JavaScript, React, Victory, data modelling
 
 ## 💬 Requirements
 
-- Toevoegen van een nieuwe nummer (title, artist, genre, rating) + deze toevoegen aan state EN database
-- Weergeven van opgeslagen nummers
-- Sorteren van de liedjes op naam (a-z of z-a) of artiest (a-z of z-a)
-- Druk op "clear all"-button om alle songs te verwijderen (uit state EN database)
-- Filteren van songs op basis van
-  - genre (default = all genres)
-  - sterren - selecteer rating door te klikken op ster 1 t/m 5 (default = all ratings)
-- Alle data worden opgeslagen in een database
+- seperate routing for each dashboard
+- filter displayed results by fun-scores/difficulty-scores/both
+- filter displayed results by specific students
+- graphs displaying results per assignment and results per student
+
+## 💬 Bonus features
+
+- dark and light mode design
+- animated buttons
+- graphs are resizable
+- sort scores by difficulty/fun-scores ascending/descending
 
 ## 🚀 Preview
 
-![alt text](/public/preview.png)
+Take a look and try out!
+https://student-dashboard-react.netlify.app
+
+Dark-mode design
+![alt text](/preview/dark-mode.png)
+
+Light-mode design
+![alt text](/preview/light-mode.png)
 
 ENJOY!

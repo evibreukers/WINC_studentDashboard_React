@@ -11,11 +11,38 @@ class AssignmentsSmart extends React.Component {
       selectedStudents: [],
       allSelected: true,
       selectedScore: "both",
+      sortBy: "default",
     };
   }
 
-  makeAssignmentArray = (assign) => {
-    const newArray = [];
+  compareFun = (a, b) => {
+    const A = a.Fun;
+    const B = b.Fun;
+
+    let comparison = 0;
+    if (A > B) {
+      comparison = 1;
+    } else if (A < B) {
+      comparison = -1;
+    }
+    return comparison;
+  };
+
+  compareDiff = (a, b) => {
+    const A = a.Difficulty;
+    const B = b.Difficulty;
+
+    let comparison = 0;
+    if (A > B) {
+      comparison = 1;
+    } else if (A < B) {
+      comparison = -1;
+    }
+    return comparison;
+  };
+
+  makeAssignmentArray = (assign, sorter) => {
+    let newArray = [];
     this.props.scoreList.forEach((item) => {
       if (
         item.Assignment === assign &&
@@ -24,11 +51,25 @@ class AssignmentsSmart extends React.Component {
         newArray.push(item);
       }
     });
+    if (this.state.sortBy === "funas") {
+      newArray = newArray.sort(this.compareFun);
+    } else if (this.state.sortBy === "funde") {
+      newArray = newArray.sort(this.compareFun).reverse();
+    } else if (this.state.sortBy === "diffas") {
+      newArray = newArray.sort(this.compareDiff);
+    } else if (this.state.sortBy === "diffde") {
+      newArray = newArray.sort(this.compareDiff);
+    }
+
     return newArray;
   };
 
   selectWeek = (event) => {
     this.setState({ currentWeek: event.target.value });
+  };
+
+  handleSort = (event) => {
+    this.setState({ sortBy: event.target.value });
   };
 
   selectStudent = (event) => {
@@ -96,6 +137,7 @@ class AssignmentsSmart extends React.Component {
           selectAll={this.selectAll}
           selectScore={this.selectScore}
           handleSwitch={this.handleSwitch}
+          handleSort={this.handleSort}
         />
 
         <div className="graphGrid">

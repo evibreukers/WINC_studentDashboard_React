@@ -14,12 +14,43 @@ class StudentSmart extends React.Component {
       btnGraph6: true,
       btnGraph7: true,
       selectedScore: "both",
+      sortBy: "default",
     };
   }
 
+  compareFun = (a, b) => {
+    const A = a.Fun;
+    const B = b.Fun;
+
+    let comparison = 0;
+    if (A > B) {
+      comparison = 1;
+    } else if (A < B) {
+      comparison = -1;
+    }
+    return comparison;
+  };
+
+  compareDiff = (a, b) => {
+    const A = a.Difficulty;
+    const B = b.Difficulty;
+
+    let comparison = 0;
+    if (A > B) {
+      comparison = 1;
+    } else if (A < B) {
+      comparison = -1;
+    }
+    return comparison;
+  };
+
+  handleSort = (event) => {
+    this.setState({ sortBy: event.target.value });
+  };
+
   /* make array of scores per week */
   makeWeekArray(weekNum) {
-    const newArray = [];
+    let newArray = [];
     this.props.scoreList.forEach((item) => {
       const week = item.Assignment.slice(1, 2);
       if (
@@ -30,12 +61,22 @@ class StudentSmart extends React.Component {
         newArray.push(item);
       }
     });
+
+    if (this.state.sortBy === "funas") {
+      newArray = newArray.sort(this.compareFun);
+    } else if (this.state.sortBy === "funde") {
+      newArray = newArray.sort(this.compareFun).reverse();
+    } else if (this.state.sortBy === "diffas") {
+      newArray = newArray.sort(this.compareDiff);
+    } else if (this.state.sortBy === "diffde") {
+      newArray = newArray.sort(this.compareDiff);
+    }
     return newArray;
   }
 
   /* make array of projects */
   makeProjectArray() {
-    const newArray = [];
+    let newArray = [];
     this.props.scoreList.forEach((item) => {
       if (
         this.props.currentStudent.first_name === item.Name &&
@@ -44,6 +85,15 @@ class StudentSmart extends React.Component {
         newArray.push(item);
       }
     });
+    if (this.state.sortBy === "funas") {
+      newArray = newArray.sort(this.compareFun);
+    } else if (this.state.sortBy === "funde") {
+      newArray = newArray.sort(this.compareFun).reverse();
+    } else if (this.state.sortBy === "diffas") {
+      newArray = newArray.sort(this.compareDiff);
+    } else if (this.state.sortBy === "diffde") {
+      newArray = newArray.sort(this.compareDiff);
+    }
     return newArray;
   }
 
@@ -52,7 +102,7 @@ class StudentSmart extends React.Component {
   };
 
   handleSwitch = (event) => {
-    const thisGraph = event.target.name;
+    const thisGraph = event.target.getAttribute("data-name");
     this.setState({ [thisGraph]: !this.state[thisGraph] });
   };
 
@@ -65,20 +115,17 @@ class StudentSmart extends React.Component {
           changeStudent={this.props.changeStudent}
           selectScore={this.selectScore}
           currentStudent={this.props.currentStudent}
+          handleSort={this.handleSort}
         />
 
         <div className="graphGrid">
           {/* graphbox 1 */}
           <div className="graphBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph1"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph1"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph1">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>
@@ -103,14 +150,10 @@ class StudentSmart extends React.Component {
           {/* graphbox 2 */}
           <div className="graphBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph2"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph2"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph2">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>
@@ -135,14 +178,10 @@ class StudentSmart extends React.Component {
           {/* graphbox 3 */}
           <div className="graphBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph3"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph3"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph3">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>
@@ -167,14 +206,10 @@ class StudentSmart extends React.Component {
           {/* graphbox 4 */}
           <div className="graphBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph4"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph4"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph4">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>
@@ -199,14 +234,10 @@ class StudentSmart extends React.Component {
           {/* graphbox 5 */}
           <div className="graphBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph5"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph5"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph5">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>
@@ -231,14 +262,10 @@ class StudentSmart extends React.Component {
           {/* graphbox 6 */}
           <div className="graphBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph6"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph6"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph6">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>
@@ -261,14 +288,10 @@ class StudentSmart extends React.Component {
           </div>
           <div className="graphBox finalBox">
             <div className="graph-header">
-              <div
-                class="button-panel"
-                onClick={this.handleSwitch}
-                name="btnGraph7"
-              >
-                <div class="button-bg"></div>
+              <div class="button-panel" onClick={this.handleSwitch}>
+                <div class="button-bg" data-name="btnGraph7"></div>
                 <i class="fas fa-sync-alt button-icon"></i>
-                <h1 class="button-text">
+                <h1 class="button-text" data-name="btnGraph7">
                   switch graph <i class="fas fa-arrow-right"></i>
                 </h1>
               </div>

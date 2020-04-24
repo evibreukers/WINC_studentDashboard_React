@@ -60,6 +60,7 @@ select {
   height: 60px;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 
 .dark select {
@@ -280,18 +281,15 @@ main {
 }
 
 .graphBox.overview {
-  width: 95%;
+  width: 100%;
+}
+
+.graphBox.finalBox {
+  width: 100%;
 }
 
 .imgBox {
   height: auto;
-}
-
-/* DASHBOARD */
-
-/* SELECT STUDENT */
-.select-panel {
-  display: flex;
 }
 
 #selectStudent {
@@ -385,6 +383,7 @@ main {
 }
 
 .selectBox {
+  display: "none";
   flex: 1;
   border-radius: 10px;
   padding: 20px;
@@ -483,6 +482,10 @@ main {
 /* SELECT SCORES */
 .selectScore-filter input {
   margin: 0 10px 0 0;
+}
+
+.selectScore-filter {
+  margin-bottom: 10px;
 }
 
 /* SELECT WEEK */

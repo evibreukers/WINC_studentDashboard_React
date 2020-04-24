@@ -5,6 +5,7 @@ function FilterStudents({
   changeStudent,
   selectScore,
   currentStudent,
+  handleSort,
 }) {
   return (
     <div className="select-panel">
@@ -58,7 +59,7 @@ function FilterStudents({
             value="both"
             onClick={selectScore}
           />
-          <label for="selectFun">all scores</label>
+          <label for="selectFun">All scores</label>
         </div>
         <div className="selectScore-filter ">
           <input
@@ -67,7 +68,7 @@ function FilterStudents({
             value="diff"
             onClick={selectScore}
           />
-          <label for="selectDiff">difficulty scores</label>
+          <label for="selectDiff">Difficulty scores</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -76,7 +77,18 @@ function FilterStudents({
             value="fun"
             onClick={selectScore}
           />
-          <label for="selectFun">fun scores</label>
+          <label for="selectFun">Fun scores</label>
+        </div>
+
+        <p>SORT BY</p>
+        <div className="sortBy-filter">
+          <select id="selectStudent" onChange={handleSort}>
+            <option value="default">Default</option>
+            <option value="funas">Fun ↑</option>
+            <option value="funde">Fun ↓</option>
+            <option value="diffas">Difficulty ↑</option>
+            <option value="diffde">Difficulty ↓</option>
+          </select>
         </div>
       </div>
     </div>

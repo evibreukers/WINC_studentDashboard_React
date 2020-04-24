@@ -99,7 +99,9 @@ class Main extends React.Component {
       .querySelectorAll("input")
       .forEach((input) => (input.value = ""));
 
-    alert("student has been added");
+    alert(
+      "student has been added \nresults of this students are shown at the students dashboard"
+    );
   };
 
   selectAvatar = (eventTarget) => {

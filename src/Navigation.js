@@ -29,7 +29,7 @@ function Navigation({ darkMode, switchDark }) {
           activeStyle={linkActive}
           activeClassName="activeLink"
         >
-          DASHBOARD
+          AVERAGE SCORES
         </NavLink>
       </li>
       <li className="nav-item">

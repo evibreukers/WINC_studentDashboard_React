@@ -1,6 +1,6 @@
 import React from "react";
 
-function FilterDash({ selectScore }) {
+function FilterDash({ selectScore, handleSort }) {
   return (
     <div className="select-panel">
       <div className="selectScore-panel selectBox">
@@ -12,7 +12,7 @@ function FilterDash({ selectScore }) {
             value="both"
             onClick={selectScore}
           />
-          <label for="selectFun">all scores</label>
+          <label for="selectFun">All scores</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -21,7 +21,7 @@ function FilterDash({ selectScore }) {
             value="diff"
             onClick={selectScore}
           />
-          <label for="selectDiff">difficulty scores</label>
+          <label for="selectDiff">Difficulty scores</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -30,7 +30,20 @@ function FilterDash({ selectScore }) {
             value="fun"
             onClick={selectScore}
           />
-          <label for="selectFun">fun scores</label>
+          <label for="selectFun">Fun scores</label>
+        </div>
+      </div>
+
+      <div className="sortBy-panel selectBox">
+        <p>SORT BY</p>
+        <div className="sortBy-filter">
+          <select id="selectStudent" onChange={handleSort}>
+            <option value="default">Default</option>
+            <option value="funas">Fun ↑</option>
+            <option value="funde">Fun ↓</option>
+            <option value="diffas">Difficulty ↑</option>
+            <option value="diffde">Difficulty ↓</option>
+          </select>
         </div>
       </div>
     </div>

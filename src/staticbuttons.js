@@ -18,7 +18,7 @@ function StaticButtons() {
         }
       }}
     >
-      + FILTER
+      - FILTER
     </button>
   );
 }
