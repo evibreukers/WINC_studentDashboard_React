@@ -1,4 +1,4 @@
-# playList React
+# Student Dashboard React
 
 Winc Academy's 6th and final project of the Front-end Development traineeship.
 
