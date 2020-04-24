@@ -2,8 +2,6 @@
 
 Winc Academy's 6th and final project of the Front-end Development traineeship.
 
-## 💬 Files
-
 ## 💬 Project Goal
 
 Building a multiple page dashboard application for Winc Academy. This app will be used to organize the scores students assigned to each assignment during the Winc Academy training.
@@ -32,6 +30,7 @@ HTML, CSS, JavaScript, React, Victory, data modelling
 - animated buttons
 - graphs are resizable
 - sort scores by difficulty/fun-scores ascending/descending
+- toggle between bar-graph and line-graph
 
 ## 🚀 Preview
 
