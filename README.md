@@ -1,4 +1,4 @@
-# Student Dashboard React
+# Student Dashboard React :boom:
 
 Winc Academy's 6th and final project of the Front-end Development traineeship.
 
