@@ -1,6 +1,7 @@
 import React from "react";
 import "../src/assets/style.css";
 import "../src/assets/switch.css";
+import "../src/assets/button.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home/home";
 import Assignments from "./pages/assignments/assignments";
@@ -88,7 +89,6 @@ function Root({
 
   return (
     <Router>
-      {console.log(sortByWeek)}
       <Switch>
         <Route path="/assignments">
           <Assignments

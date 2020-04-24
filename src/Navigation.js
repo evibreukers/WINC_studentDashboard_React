@@ -4,13 +4,13 @@ import Logo from "../src/assets/img/winclogo.png";
 
 function Navigation({ darkMode, switchDark }) {
   const linkStyle = {
-    color: "white",
+    color: "rgb(146, 168, 232)",
     textDecoration: "none",
     cursor: "pointer",
   };
 
   const linkActive = {
-    color: "#fc0388",
+    color: " white",
     cursor: "pointer",
   };
 
@@ -23,22 +23,42 @@ function Navigation({ darkMode, switchDark }) {
   const light = (
     <ul className="nav">
       <li className="nav-item">
-        <NavLink to="/home" style={linkStyle} activeStyle={linkActive}>
+        <NavLink
+          to="/home"
+          style={linkStyle}
+          activeStyle={linkActive}
+          activeClassName="activeLink"
+        >
           DASHBOARD
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink to="/assignments" style={linkStyle} activeStyle={linkActive}>
+        <NavLink
+          to="/assignments"
+          style={linkStyle}
+          activeStyle={linkActive}
+          activeClassName="activeLink"
+        >
           ASSIGNMENTS
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink to="/students" style={linkStyle} activeStyle={linkActive}>
+        <NavLink
+          to="/students"
+          style={linkStyle}
+          activeStyle={linkActive}
+          activeClassName="activeLink"
+        >
           STUDENTS
         </NavLink>
       </li>
       <li className="nav-item">
-        <NavLink to="/newstudent" style={linkStyle} activeStyle={linkActive}>
+        <NavLink
+          to="/newstudent"
+          style={linkStyle}
+          activeStyle={linkActive}
+          activeClassName="activeLink"
+        >
           + ADD NEW STUDENT
         </NavLink>
       </li>
@@ -80,12 +100,14 @@ function Navigation({ darkMode, switchDark }) {
 
   return (
     <div className="navWrapper">
-      <h1 className="nav-title">STUDENT DASHBOARD</h1>
+      <h1 className="nav-title">
+        STUDENT <br /> DASHBOARD
+      </h1>
       <div>{darkMode ? dark : light}</div>
-      <div onClick={switchDark} class="switch">
-        <div class="circle"></div>
-        <i class="far fa-moon"></i>
-        <i class="far fa-sun"></i>
+      <div onClick={switchDark} className="switch">
+        <div className="circle"></div>
+        <i className="far fa-moon"></i>
+        <i className="far fa-sun"></i>
       </div>
       <img className="logo" src={Logo} alt="problem?" />
     </div>

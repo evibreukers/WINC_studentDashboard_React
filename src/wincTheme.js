@@ -24,7 +24,7 @@ const wincTheme = {
     style: {
       axis: {
         fill: "transparent",
-        stroke: "#90A4AE",
+        stroke: "rgb(132, 161, 198)",
         strokeWidth: 2,
         strokeLinecap: "round",
         strokeLinejoin: "round",
@@ -147,7 +147,7 @@ const wincTheme = {
         fill: "transparent",
         opacity: 1,
         stroke: "#455A64",
-        strokeWidth: 2,
+        strokeWidth: 4,
       },
       labels: {
         fontFamily: font,

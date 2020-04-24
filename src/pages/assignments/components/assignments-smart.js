@@ -1,6 +1,6 @@
 import React from "react";
 import FilterAssignments from "./filter-assignments";
-import { makeGraphAssign } from "../../../makeGraph";
+import { makeGraphAssign } from "../../../makegraph";
 
 class AssignmentsSmart extends React.Component {
   constructor() {
@@ -87,7 +87,7 @@ class AssignmentsSmart extends React.Component {
 
   render() {
     return (
-      <div className="studentsWrapper">
+      <div className="assignmentsWrapper">
         <h1 className="dashboard-titel">ASSIGNMENTS</h1>
         <FilterAssignments
           selectWeek={this.selectWeek}
@@ -101,9 +101,24 @@ class AssignmentsSmart extends React.Component {
         <div className="graphGrid">
           {this.props.sortByWeek[this.state.currentWeek].map((item) => {
             return (
-              <div className="graphBox">
-                <div className="graph-titel">{item}</div>
-                <button onClick={this.handleSwitch}>SWITCH GRAPH</button>
+              <div
+                className="graphBox"
+                key={this.props.sortByWeek[this.state.currentWeek].indexOf(
+                  item
+                )}
+              >
+                <div className="graph-header">
+                  <div className="button-panel" onClick={this.handleSwitch}>
+                    <div className="button-bg"></div>
+                    <i className="fas fa-sync-alt button-icon"></i>
+                    <h1 className="button-text">
+                      switch graph <i className="fas fa-arrow-right"></i>
+                    </h1>
+                  </div>
+
+                  <div className="graph-title">{item}</div>
+                </div>
+
                 <div className="graph">
                   {makeGraphAssign(
                     this.makeAssignmentArray(item),

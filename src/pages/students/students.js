@@ -1,6 +1,7 @@
 import React from "react";
-import Navigation from "../../Navigation";
+import Navigation from "../../navigation";
 import StudentsSmart from "./components/students-smart";
+import StaticButtons from "../../staticbuttons";
 
 function Students({
   scoreList,
@@ -21,6 +22,7 @@ function Students({
           changeStudent={changeStudent}
         />
       </main>
+      <StaticButtons />
     </div>
   );
 }

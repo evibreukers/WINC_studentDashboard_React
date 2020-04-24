@@ -1,6 +1,5 @@
 import React from "react";
 import DashboardUI from "./dashboard-ui";
-
 function DashboardSmart({ scoreList, studentNames, assignmentList }) {
   /* calculate average for each ASSIGNMENT */
   const averageScores = [];

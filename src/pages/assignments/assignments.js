@@ -1,6 +1,7 @@
 import React from "react";
-import Navigation from "../../Navigation";
+import Navigation from "../../navigation";
 import AssignmentsSmart from "./components/assignments-smart";
+import StaticButtons from "../../staticbuttons";
 
 function Assignments({
   scoreList,
@@ -23,6 +24,7 @@ function Assignments({
           sortByWeek={sortByWeek}
         />
       </main>
+      <StaticButtons />
     </div>
   );
 }

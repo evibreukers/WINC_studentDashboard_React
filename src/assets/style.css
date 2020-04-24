@@ -7,63 +7,121 @@
   outline: none;
 }
 
+:root {
+  --main-color-light: rgb(63, 54, 157);
+  --sec-color-light: rgb(197, 198, 238);
+  --thr-color-light: rgb(255, 181, 164);
+  --fou-color-light: rgb(255, 133, 100);
+  --main-color-dark: rgb(40, 53, 110);
+  --sec-color-dark: rgb(65, 61, 157);
+  --thr-color-dark: rgb(215, 231, 255);
+}
+
 button {
   cursor: pointer;
   padding: 10px;
   margin: 10px 0px;
-  background-color: rgb(240, 151, 141);
+  background-color: var(--thr-color-light);
   border: none;
   border-radius: 3px;
   color: white;
-}
-
-.dark button {
-  background-color: rgb(40, 53, 110);
-  color: rgb(130, 158, 199);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(211, 211, 211, 0.886);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(211, 211, 211, 0.886);
+  box-shadow: 10px 10px 10px -10px rgba(211, 211, 211, 0.886);
 }
 
 button:hover {
-  background-color: #fc0388;
-  color: white;
+  background-color: rgb(54, 37, 116);
+}
+
+.dark button {
+  background-color: var(--sec-color-dark);
+  color: var(--thr-color-dark);
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(19, 5, 48, 0.329);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(19, 5, 48, 0.329);
+  box-shadow: 10px 10px 19px -10px rgba(19, 5, 48, 0.329);
+}
+
+.dark button:hover {
+  background-color: rgb(65, 61, 157);
 }
 
 select {
-  width: 262px;
-  height: 32px;
-  padding: 4px;
-  line-height: 32px;
-  text-indent: 4px;
-  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgaWQ9IkxheWVyXzEiICAgZGF0YS1uYW1lPSJMYXllciAxIiAgIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIiAgIHZlcnNpb249IjEuMSIgICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIgICBzb2RpcG9kaTpkb2NuYW1lPSJkb3dubG9hZC5zdmciPiAgPG1ldGFkYXRhICAgICBpZD0ibWV0YWRhdGE0MjAyIj4gICAgPHJkZjpSREY+ICAgICAgPGNjOldvcmsgICAgICAgICByZGY6YWJvdXQ9IiI+ICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4gICAgICAgIDxkYzp0eXBlICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxzb2RpcG9kaTpuYW1lZHZpZXcgICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiAgICAgYm9yZGVyb3BhY2l0eT0iMSIgICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiICAgICBncmlkdG9sZXJhbmNlPSIxMCIgICAgIGd1aWRldG9sZXJhbmNlPSIxMCIgICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIgICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMjciICAgICBpZD0ibmFtZWR2aWV3NDIwMCIgICAgIHNob3dncmlkPSJmYWxzZSIgICAgIGlua3NjYXBlOnpvb209Ijg0LjMiICAgICBpbmtzY2FwZTpjeD0iMi40NzQ5OTk5IiAgICAgaW5rc2NhcGU6Y3k9IjUiICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMTkyMCIgICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIgICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJMYXllcl8xIiAvPiAgPGRlZnMgICAgIGlkPSJkZWZzNDE5MCI+ICAgIDxzdHlsZSAgICAgICBpZD0ic3R5bGU0MTkyIj4uY2xzLTJ7ZmlsbDojNDQ0O308L3N0eWxlPiAgPC9kZWZzPiAgPHRpdGxlICAgICBpZD0idGl0bGU0MTk0Ij5hcnJvd3M8L3RpdGxlPiAgPHBvbHlnb24gICAgIGNsYXNzPSJjbHMtMiIgICAgIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIiAgICAgaWQ9InBvbHlnb240MTk4IiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIgLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -5px;
+  background-color: var(--sec-color-light);
+  color: var(--main-color-light);
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
 }
 
 .dark select {
-  background-color: rgb(40, 53, 110);
-  color: rgb(130, 158, 199);
+  background-color: var(--sec-color-dark);
+  color: var(--thr-color-dark);
 }
 
 h1 {
-  font-size: 1.7rem;
-  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: "Staatliches", cursive;
+}
+
+.dark h1 {
+  color: var(--thr-color-dark);
 }
 
 p {
-  background-color: rgb(194, 201, 232);
+  background-color: var(--sec-color-light);
   padding: 10px;
   border-radius: 5px;
-  color: rgb(18, 45, 80);
+  color: var(--main-color-light);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(211, 211, 211, 0.886);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(211, 211, 211, 0.886);
+  box-shadow: 10px 10px 10px -10px rgba(211, 211, 211, 0.886);
+  font-family: "Staatliches", cursive;
 }
 
 .dark p {
-  background-color: rgb(40, 53, 110);
-  color: rgb(132, 161, 198);
+  background-color: var(--sec-color-dark);
+  color: var(--thr-color-dark);
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(19, 5, 48, 0.329);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(19, 5, 48, 0.329);
+  box-shadow: 10px 10px 19px -10px rgba(19, 5, 48, 0.329);
 }
 
 div {
-  color: rgb(18, 45, 80);
+  color: var(--main-color-light);
 }
 
 .dark div {
   color: rgb(132, 161, 198);
+}
+
+.filterSmallScreen {
+  position: fixed;
+  top: 0px;
+  right: 110px;
+  display: block;
+  margin-left: auto;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  padding: 14px;
+}
+
+/* On mouse-over, add a grey background color */
+.inputBox:hover input ~ .radioStyle {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.inputBox input:checked ~ .radioStyle {
+  background-color: #2196f3;
 }
 
 /* NAV */
@@ -74,7 +132,7 @@ div {
   height: 100vh;
   width: 250px;
   padding: 10px 10px 20px 10px;
-  background-color: rgb(72, 104, 146);
+  background-color: var(--main-color-light);
   color: white;
   border-radius: 0px 30px 30px 0px;
   -webkit-box-shadow: 10px 10px 19px -10px rgba(148, 148, 148, 1);
@@ -87,7 +145,7 @@ div {
 
 .dark .navWrapper {
   background-color: rgb(17, 17, 48);
-  color: rgb(132, 161, 198);
+  color: rgb(119, 139, 199);
   -webkit-box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
   -moz-box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
   box-shadow: 10px 10px 19px -10px rgb(0, 0, 0);
@@ -107,10 +165,24 @@ div {
 }
 
 .nav-item {
-  padding: 15px;
+  padding: 15px 30px;
   cursor: pointer;
+  background-color: rgba(109, 140, 234, 0.541);
+  border-radius: 30px;
+  margin: 10px 0px 10px -10px;
+  width: 110%;
+  -webkit-box-shadow: 10px 10px 19px -10px rgba(26, 8, 73, 0.288);
+  -moz-box-shadow: 10px 10px 19px -10px rgba(26, 8, 73, 0.288);
+  box-shadow: 10px 10px 19px -10px rgba(26, 8, 73, 0.288);
 }
 
+.nav-item:hover {
+  background-color: rgba(59, 49, 148, 0.541);
+}
+
+.dark .nav-item {
+  background-color: var(--sec-color-dark);
+}
 .selected {
   background-color: rgba(67, 43, 226, 0.205);
   width: 95%;
@@ -148,7 +220,7 @@ div {
 main {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(231, 237, 249);
+  background-color: rgb(232, 234, 248);
 }
 
 .dark main {
@@ -157,11 +229,22 @@ main {
 
 .dashboardWrapper,
 .studentsWrapper,
+.assignmentsWrapper,
 .newstudentWrapper {
   padding-left: 270px;
   padding-right: 20px;
   width: inherit;
-  min-height: inherit;
+}
+
+.graph-header {
+  display: flex;
+}
+
+.graph-title {
+  margin-left: auto;
+  font-family: "Staatliches", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 .dashboard-titel {
@@ -200,10 +283,6 @@ main {
   width: 95%;
 }
 
-.finalBox {
-  grid-column: span 2;
-}
-
 .imgBox {
   height: auto;
 }
@@ -221,11 +300,10 @@ main {
   border: none;
 }
 
-/* STUDENTS */
-
 /* NEW STUDENT */
 .newstudentWrapper {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .newstudent-form {
@@ -252,11 +330,18 @@ main {
   color: rgb(130, 158, 199);
 }
 
+.newstudent-form p {
+  margin: 20px 0px;
+}
 .newstudent-form input {
   padding: 10px;
   margin: 5px 0px;
   border: 2px solid rgb(183, 192, 238);
   border-radius: 5px;
+}
+
+.newstudent-form ::placeholder {
+  color: rgb(130, 158, 199);
 }
 
 .dark .newstudent-form input {
@@ -265,17 +350,8 @@ main {
   border: 2px solid rgb(40, 53, 110);
 }
 
-.addStudent-button {
-  padding: 10px 20px;
-  margin: 5px 0px;
-  width: fit-content;
-  margin: 10px auto;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
-.addStudent-button:hover {
-  background-color: #fc0388;
+.dark .newstudent-form ::placeholder {
+  color: rgb(130, 158, 199);
 }
 
 .avatar-panel {
@@ -284,6 +360,9 @@ main {
   grid-template-rows: auto;
   grid-gap: 10px;
   padding: 10px;
+  border: 2px solid rgb(183, 192, 238);
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
 }
 
 .avatarBox {
@@ -348,8 +427,8 @@ main {
 
 .profileBox {
   display: flex;
+  flex-direction: row;
   flex: 2;
-  background-color: rgb(127, 146, 194);
 }
 
 .dark .profileBox {
@@ -358,7 +437,8 @@ main {
 }
 
 .profileBox p {
-  background-color: rgb(215, 223, 245);
+  background-color: rgb(189, 194, 234);
+  font-family: "Dosis", sans-serif;
 }
 
 .dark .profileBox p {
@@ -366,8 +446,16 @@ main {
   color: rgb(130, 158, 199);
 }
 
+.profile-item {
+  margin: 5px;
+  font-family: "Staatliches", cursive;
+}
+
 .profile {
   display: flex;
+  flex: 2;
+  list-style: none;
+  margin-left: 10px;
 }
 
 .profile span {
@@ -378,7 +466,6 @@ main {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  background-color: white;
   border-radius: 5px;
   padding: 5px;
 }
@@ -393,16 +480,6 @@ main {
   border-radius: 5px;
 }
 
-.profile {
-  flex: 2;
-  margin-left: 50px;
-  list-style: none;
-}
-
-.profile-item {
-  margin: 5px;
-}
-
 /* SELECT SCORES */
 .selectScore-filter input {
   margin: 0 10px 0 0;
@@ -412,4 +489,31 @@ main {
 
 .dashboardWrapper .selectBox {
   max-width: 30%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px) {
+  .graphBox {
+    width: 100%;
+  }
+
+  .select-panel {
+    height: fit-content;
+    min-height: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .selectBox {
+    height: fit-content;
+    min-height: 0px;
+  }
+
+  .dashboardWrapper .selectBox {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import Navigation from "../../Navigation";
+import Navigation from "../../navigation";
 import DashboardSmart from "./components/dashboard-smart";
+import StaticButtons from "../../staticbuttons";
 
 function Home({
   scoreList,
@@ -19,6 +20,7 @@ function Home({
           assignmentList={assignmentList}
         />
       </main>
+      <StaticButtons />
     </div>
   );
 }

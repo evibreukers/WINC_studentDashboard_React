@@ -1,5 +1,5 @@
 import React from "react";
-import { makeGraph } from "../../../makeGraph";
+import { makeGraph } from "../../../makegraph";
 import FilterStudents from "./filter-students";
 
 class StudentSmart extends React.Component {
@@ -70,10 +70,21 @@ class StudentSmart extends React.Component {
         <div className="graphGrid">
           {/* graphbox 1 */}
           <div className="graphBox">
-            <div className="graph-titel">WEEK1</div>
-            <button onClick={this.handleSwitch} name="btnGraph1">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph1"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">WEEK 1</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeWeekArray("1"),
@@ -91,10 +102,21 @@ class StudentSmart extends React.Component {
 
           {/* graphbox 2 */}
           <div className="graphBox">
-            <div className="graph-titel">WEEK2</div>
-            <button onClick={this.handleSwitch} name="btnGraph2">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph2"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">WEEK 2</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeWeekArray("2"),
@@ -112,10 +134,21 @@ class StudentSmart extends React.Component {
 
           {/* graphbox 3 */}
           <div className="graphBox">
-            <div className="graph-titel">WEEK3</div>
-            <button onClick={this.handleSwitch} name="btnGraph3">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph3"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">WEEK 3</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeWeekArray("3"),
@@ -133,10 +166,21 @@ class StudentSmart extends React.Component {
 
           {/* graphbox 4 */}
           <div className="graphBox">
-            <div className="graph-titel">WEEK4</div>
-            <button onClick={this.handleSwitch} name="btnGraph4">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph4"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">WEEK 4</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeWeekArray("4"),
@@ -154,10 +198,21 @@ class StudentSmart extends React.Component {
 
           {/* graphbox 5 */}
           <div className="graphBox">
-            <div className="graph-titel">WEEK5</div>
-            <button onClick={this.handleSwitch} name="btnGraph5">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph5"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">WEEK 5</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeWeekArray("5"),
@@ -175,10 +230,21 @@ class StudentSmart extends React.Component {
 
           {/* graphbox 6 */}
           <div className="graphBox">
-            <div className="graph-titel">WEEK6</div>
-            <button onClick={this.handleSwitch} name="btnGraph6">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph6"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">WEEK 6</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeWeekArray("6"),
@@ -194,10 +260,21 @@ class StudentSmart extends React.Component {
             </div>
           </div>
           <div className="graphBox finalBox">
-            <div className="graph-titel">FINAL PROJECTS</div>
-            <button onClick={this.handleSwitch} name="btnGraph7">
-              SWITCH GRAPH
-            </button>
+            <div className="graph-header">
+              <div
+                class="button-panel"
+                onClick={this.handleSwitch}
+                name="btnGraph7"
+              >
+                <div class="button-bg"></div>
+                <i class="fas fa-sync-alt button-icon"></i>
+                <h1 class="button-text">
+                  switch graph <i class="fas fa-arrow-right"></i>
+                </h1>
+              </div>
+
+              <div className="graph-title">FINAL PROJECTS</div>
+            </div>
             <div className="graph">
               {makeGraph(
                 this.makeProjectArray(),

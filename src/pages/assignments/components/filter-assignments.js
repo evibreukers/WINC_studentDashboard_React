@@ -8,7 +8,7 @@ function FilterAssignments({
   selectScore,
 }) {
   return (
-    <div className="select-panel ">
+    <div className="select-panel">
       <div className="selectWeek-panel selectBox">
         <p>SELECT WEEK</p>
         <div className="select-style">
@@ -30,15 +30,14 @@ function FilterAssignments({
         <div className="selectStudent-filter">
           {studentProfileList.map((item) => {
             return (
-              <div className="selectStudent-item">
+              <div className="selectStudent-item" key={item.id}>
                 <input
                   type="checkbox"
                   name={item.first_name}
                   value={item.first_name}
-                  key={item.id}
                   onClick={selectStudent}
                 />
-                <label for={item.first_name}>{item.first_name}</label>
+                <label htmlFor={item.first_name}>{item.first_name}</label>
               </div>
             );
           })}
@@ -54,7 +53,7 @@ function FilterAssignments({
             value="both"
             onClick={selectScore}
           />
-          <label for="selectFun">all scores</label>
+          <label htmlFor="selectFun">all scores</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -63,7 +62,7 @@ function FilterAssignments({
             value="diff"
             onClick={selectScore}
           />
-          <label for="selectDiff">difficulty scores</label>
+          <label htmlFor="selectDiff">difficulty scores</label>
         </div>
         <div className="selectScore-filter">
           <input
@@ -72,7 +71,7 @@ function FilterAssignments({
             value="fun"
             onClick={selectScore}
           />
-          <label for="selectFun">fun scores</label>
+          <label htmlFor="selectFun">fun scores</label>
         </div>
       </div>
     </div>

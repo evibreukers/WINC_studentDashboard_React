@@ -39,7 +39,7 @@ function NewStudentSmart({ addStudent, onBlur, selectAvatar }) {
           onBlur={onBlur}
           placeholder="e-mail"
         ></input>
-        <div>Select an avatar</div>
+
         <div className="avatar-panel">
           <div className="avatarBox">
             <img
@@ -122,9 +122,13 @@ function NewStudentSmart({ addStudent, onBlur, selectAvatar }) {
             />
           </div>
         </div>
-        <button className="addStudent-button" onClick={addStudent}>
-          add students
-        </button>
+        <div class="button-panel" onClick={addStudent}>
+          <div class="button-bg"></div>
+          <i class="fas fa-user-plus button-icon"></i>
+          <h1 class="button-text">
+            add student <i class="fas fa-arrow-right"></i>
+          </h1>
+        </div>
       </div>
     </div>
   );

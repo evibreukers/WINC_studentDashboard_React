@@ -51,7 +51,7 @@ function FilterStudents({
 
       <div className="selectScore-panel selectBox">
         <p>SELECT SCORES</p>
-        <div className="selectScore-filter ">
+        <div className="selectScore-filter">
           <input
             type="radio"
             name="selectedScore"
@@ -60,7 +60,7 @@ function FilterStudents({
           />
           <label for="selectFun">all scores</label>
         </div>
-        <div className="selectScore-filter">
+        <div className="selectScore-filter ">
           <input
             type="radio"
             name="selectedScore"

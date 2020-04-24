@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../../Navigation";
+import Navigation from "../../navigation";
 import NewStudentSmart from "./components/newstudent-smart";
 
 function NewStudent({
@@ -12,7 +12,7 @@ function NewStudent({
   return (
     <div>
       <Navigation darkMode={darkMode} switchDark={switchDark} />
-      <main>
+      <main className="mainNewStudent">
         <NewStudentSmart
           addStudent={addStudent}
           onBlur={onBlur}
